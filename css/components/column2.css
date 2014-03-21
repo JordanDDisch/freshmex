@@ -1,0 +1,15 @@
+/* line 1, ../../scss/components/column2.scss */
+.goal, .specials {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+/* line 6, ../../scss/components/column2.scss */
+.goal__asterisks {
+  font-style: italic;
+}
+
+/* line 10, ../../scss/components/column2.scss */
+.spicy-choice {
+  margin-bottom: 1em;
+}
