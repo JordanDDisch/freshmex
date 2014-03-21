@@ -1,0 +1,17 @@
+.col-parent {
+  width: 50%;
+  float: left;
+  border: solid 3px green;
+}
+.col-child {
+  float: left;
+  padding: 1em;
+}
+.col-child-left {
+  width: 60%;
+  background: deeppink;
+}
+.col-child-right {
+  width: 40%;
+  background: hotpink;
+}
