@@ -864,13 +864,58 @@ textarea {
 /* line 10, ../scss/_layout.scss */
 .col-child-left {
   width: 60%;
-  background: deeppink;
 }
 
-/* line 14, ../scss/_layout.scss */
+/* line 13, ../scss/_layout.scss */
 .col-child-right {
   width: 40%;
-  background: hotpink;
 }
 
-/* No files to import found in components/* */
+/* line 1, ../scss/components/_base.scss */
+.logo img {
+  max-width: 100%;
+}
+
+/* line 1, ../scss/components/_typography.scss */
+body {
+  font-family: verdana;
+}
+
+/* line 5, ../scss/components/_typography.scss */
+.order-title {
+  font-family: 'Rancho', cursive;
+  font: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+/* line 13, ../scss/components/_typography.scss */
+.wrapper {
+  width: 25%;
+}
+
+/* line 20, ../scss/components/_typography.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 11, ../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 24, ../scss/components/_typography.scss */
+ul li {
+  margin-bottom: 1em;
+}
+
+/* line 27, ../scss/components/_typography.scss */
+h2 {
+  font-family: 'Rancho', cursive;
+  font-size: 2em;
+  margin: .5em 0;
+  color: black;
+}

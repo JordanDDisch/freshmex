@@ -1,0 +1,32 @@
+body {
+  font-family: verdana;
+}
+
+.order-title {
+  font-family: 'Rancho', cursive;
+  font: bold;
+  color: $color-1;
+  text-transform:uppercase;
+  font-size: 1.25em;
+}
+
+.wrapper {
+  width: 25%;
+}
+
+.bold-star {
+}
+
+ul {
+  @include no-bullets;
+  margin: 0;
+  padding: 0;
+  li { margin-bottom: 1em; }
+}
+
+h2 {
+  font-family: 'Rancho', cursive;
+  font-size: 2em;
+  margin: .5em 0;
+  color: $color-1;
+}
