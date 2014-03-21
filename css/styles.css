@@ -849,24 +849,29 @@ textarea {
   }
 }
 /* line 1, ../scss/_layout.scss */
-.col-parent {
-  width: 50%;
-  float: left;
-  border: solid 3px green;
+* {
+  box-sizing: border-box;
 }
 
-/* line 6, ../scss/_layout.scss */
-.col-child {
+/* line 5, ../scss/_layout.scss */
+.col-parent {
+  width: 50%;
   float: left;
   padding: 1em;
 }
 
 /* line 10, ../scss/_layout.scss */
-.col-child-left {
-  width: 60%;
+.col-child {
+  float: left;
 }
 
 /* line 13, ../scss/_layout.scss */
+.col-child-left {
+  width: 55%;
+  margin-right: 5%;
+}
+
+/* line 17, ../scss/_layout.scss */
 .col-child-right {
   width: 40%;
 }
@@ -876,26 +881,42 @@ textarea {
   max-width: 100%;
 }
 
+/* line 1, ../scss/components/_mains.scss */
+.smaller-text {
+  font-size: .8em;
+}
+/* line 3, ../scss/components/_mains.scss */
+.smaller-text li {
+  margin-bottom: 0;
+}
+
+/* line 8, ../scss/components/_mains.scss */
+.col-parent-2 .col-child {
+  margin-bottom: 1em;
+}
+
 /* line 1, ../scss/components/_typography.scss */
 body {
   font-family: verdana;
+  font-size: 14px;
 }
 
-/* line 5, ../scss/components/_typography.scss */
+/* line 6, ../scss/components/_typography.scss */
 .order-title {
   font-family: 'Rancho', cursive;
   font: bold;
   color: black;
   text-transform: uppercase;
   font-size: 1.25em;
+  display: block;
 }
 
-/* line 13, ../scss/components/_typography.scss */
+/* line 15, ../scss/components/_typography.scss */
 .wrapper {
   width: 25%;
 }
 
-/* line 20, ../scss/components/_typography.scss */
+/* line 22, ../scss/components/_typography.scss */
 ul {
   list-style: none;
   margin: 0;
@@ -907,15 +928,27 @@ ul li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 24, ../scss/components/_typography.scss */
+/* line 26, ../scss/components/_typography.scss */
 ul li {
   margin-bottom: 1em;
 }
 
-/* line 27, ../scss/components/_typography.scss */
-h2 {
+/* line 31, ../scss/components/_typography.scss */
+h2, h3 {
   font-family: 'Rancho', cursive;
   font-size: 2em;
   margin: .5em 0;
   color: black;
+}
+
+/* line 38, ../scss/components/_typography.scss */
+.price {
+  font-weight: bold;
+}
+
+/* line 42, ../scss/components/_typography.scss */
+.supplemental {
+  border: solid 1px black;
+  padding: .25em;
+  margin: 1em 0;
 }

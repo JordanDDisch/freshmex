@@ -1,14 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 .col-parent {
   width: 50%;
   float: left;
-  border: solid 3px green;
+  padding: 1em;
 }
 .col-child {
   float: left;
-  padding: 1em;
 }
 .col-child-left {
-  width: 60%;
+  width: 55%;
+  margin-right: 5%;
 }
 .col-child-right {
   width: 40%;

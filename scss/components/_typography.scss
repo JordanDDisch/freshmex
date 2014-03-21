@@ -1,5 +1,6 @@
 body {
   font-family: verdana;
+  font-size: 14px;
 }
 
 .order-title {
@@ -8,6 +9,7 @@ body {
   color: $color-1;
   text-transform:uppercase;
   font-size: 1.25em;
+  display: block;
 }
 
 .wrapper {
@@ -21,12 +23,24 @@ ul {
   @include no-bullets;
   margin: 0;
   padding: 0;
-  li { margin-bottom: 1em; }
+  li {
+    margin-bottom: 1em;
+  }
 }
 
-h2 {
+h2, h3 {
   font-family: 'Rancho', cursive;
   font-size: 2em;
   margin: .5em 0;
   color: $color-1;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.supplemental {
+  border: solid 1px black;
+  padding: .25em;
+  margin: 1em 0;
 }
