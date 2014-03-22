@@ -854,26 +854,34 @@ textarea {
 }
 
 /* line 5, ../scss/_layout.scss */
+body {
+  max-width: 297mm;
+  max-height: 210mm;
+  margin: auto;
+}
+
+/* line 11, ../scss/_layout.scss */
 .col-parent {
   width: 50%;
+  height: 100%;
   float: left;
   padding: 1em;
 }
 
-/* line 10, ../scss/_layout.scss */
+/* line 22, ../scss/_layout.scss */
 .col-child {
   float: left;
 }
 
-/* line 13, ../scss/_layout.scss */
+/* line 25, ../scss/_layout.scss */
 .col-child-left {
   width: 55%;
-  margin-right: 5%;
+  padding-right: 2em;
 }
 
-/* line 17, ../scss/_layout.scss */
+/* line 29, ../scss/_layout.scss */
 .col-child-right {
-  width: 40%;
+  width: 45%;
 }
 
 /* line 1, ../scss/components/_base.scss */
@@ -892,7 +900,7 @@ textarea {
 
 /* line 8, ../scss/components/_mains.scss */
 .col-parent-2 .col-child {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 /* line 1, ../scss/components/_typography.scss */

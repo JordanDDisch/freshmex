@@ -2,18 +2,30 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 297mm;
+  max-height: 210mm;
+  margin: auto;
+}
+
 .col-parent {
   width: 50%;
+  height: 100%;
   float: left;
   padding: 1em;
 }
+
+.col-parent-1 {
+
+}
+
 .col-child {
   float: left;
 }
 .col-child-left {
   width: 55%;
-  margin-right: 5%;
+  padding-right: 2em;
 }
 .col-child-right {
-  width: 40%;
+  width: 45%;
 }
