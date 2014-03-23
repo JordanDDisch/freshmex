@@ -885,6 +885,25 @@ body {
   padding-left: 2em;
 }
 
+/* line 34, ../scss/_layout.scss */
+.centered-column {
+  padding: 0;
+}
+/* line 36, ../scss/_layout.scss */
+.centered-column .order-title {
+  text-align: center;
+}
+/* line 37, ../scss/_layout.scss */
+.centered-column ul {
+  width: 75%;
+  margin: auto;
+}
+
+/* line 43, ../scss/_layout.scss */
+.centered-column-2 {
+  padding-left: 2em;
+}
+
 /* line 1, ../scss/components/_base.scss */
 .logo img {
   max-width: 100%;
@@ -902,11 +921,6 @@ body {
 /* line 8, ../scss/components/_mains.scss */
 .col-parent-2 .col-child {
   margin-bottom: .25em;
-}
-
-/* line 1, ../scss/components/_sides.scss */
-.sides {
-  width: 30%;
 }
 
 /* line 1, ../scss/components/_typography.scss */
@@ -945,9 +959,10 @@ ul li {
 /* line 26, ../scss/components/_typography.scss */
 ul li {
   margin-bottom: 1em;
+  position: relative;
 }
 
-/* line 31, ../scss/components/_typography.scss */
+/* line 32, ../scss/components/_typography.scss */
 h2, h3 {
   font-family: 'Rancho', cursive;
   text-transform: uppercase;
@@ -956,12 +971,20 @@ h2, h3 {
   color: black;
 }
 
-/* line 39, ../scss/components/_typography.scss */
+/* line 40, ../scss/components/_typography.scss */
 .price {
   float: right;
 }
 
-/* line 43, ../scss/components/_typography.scss */
+/* line 44, ../scss/components/_typography.scss */
+.absolute-price {
+  position: absolute;
+  right: 0;
+  top: .025em;
+  font-size: 1em;
+}
+
+/* line 51, ../scss/components/_typography.scss */
 .supplemental {
   font-style: italic;
   padding: .25em;
