@@ -871,15 +871,16 @@ body {
 /* line 22, ../scss/_layout.scss */
 .col-child {
   float: left;
+  width: 100%;
 }
 
-/* line 25, ../scss/_layout.scss */
+/* line 26, ../scss/_layout.scss */
 .col-child-left {
   width: 55%;
   padding-right: 2em;
 }
 
-/* line 29, ../scss/_layout.scss */
+/* line 30, ../scss/_layout.scss */
 .col-child-right {
   width: 45%;
 }
@@ -891,7 +892,7 @@ body {
 
 /* line 1, ../scss/components/_mains.scss */
 .smaller-text {
-  font-size: .8em;
+  font-size: .85em;
 }
 /* line 3, ../scss/components/_mains.scss */
 .smaller-text li {
@@ -900,7 +901,12 @@ body {
 
 /* line 8, ../scss/components/_mains.scss */
 .col-parent-2 .col-child {
-  margin-bottom: .5em;
+  margin-bottom: .25em;
+}
+
+/* line 1, ../scss/components/_sides.scss */
+.sides {
+  width: 30%;
 }
 
 /* line 1, ../scss/components/_typography.scss */
@@ -951,12 +957,12 @@ h2, h3 {
 
 /* line 38, ../scss/components/_typography.scss */
 .price {
-  font-weight: bold;
+  float: right;
 }
 
 /* line 42, ../scss/components/_typography.scss */
 .supplemental {
-  border: solid 1px black;
+  font-style: italic;
   padding: .25em;
   margin: 1em 0;
 }

@@ -36,11 +36,11 @@ h2, h3 {
 }
 
 .price {
-  font-weight: bold;
+  float: right;
 }
 
 .supplemental {
-  border: solid 1px black;
+  font-style: italic;
   padding: .25em;
   margin: 1em 0;
 }
