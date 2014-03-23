@@ -977,9 +977,10 @@ h2, h3 {
 /* line 6, ../scss/components/column2.scss */
 .goal__asterisks {
   font-style: italic;
+  margin-bottom: 1em;
 }
 
-/* line 10, ../scss/components/column2.scss */
+/* line 11, ../scss/components/column2.scss */
 .spicy-choice {
   margin-bottom: 1em;
 }
