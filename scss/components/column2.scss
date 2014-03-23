@@ -1,11 +1,13 @@
 .goal, .specials {
-	font-weight: bold;
 	margin-bottom: 1em;
 }
 
 .goal__asterisks {
 	font-style: italic;
 	margin-bottom: 1em;
+	li {
+	  padding-bottom: .5em;
+	}
 }
 
 .spicy-choice {

@@ -908,6 +908,7 @@ body {
 /* line 1, ../scss/components/_base.scss */
 .logo img {
   max-width: 100%;
+  margin: 2em 0em 1em;
 }
 
 /* line 1, ../scss/components/_mains.scss */
@@ -994,17 +995,20 @@ h2, h3 {
 
 /* line 1, ../scss/components/column2.scss */
 .goal, .specials {
-  font-weight: bold;
   margin-bottom: 1em;
 }
 
-/* line 6, ../scss/components/column2.scss */
+/* line 5, ../scss/components/column2.scss */
 .goal__asterisks {
   font-style: italic;
   margin-bottom: 1em;
 }
+/* line 8, ../scss/components/column2.scss */
+.goal__asterisks li {
+  padding-bottom: .5em;
+}
 
-/* line 11, ../scss/components/column2.scss */
+/* line 13, ../scss/components/column2.scss */
 .spicy-choice {
   margin-bottom: 1em;
 }
