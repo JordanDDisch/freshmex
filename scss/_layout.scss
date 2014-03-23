@@ -12,11 +12,14 @@ body {
   width: 50%;
   height: 100%;
   float: left;
-  padding: 1em;
+  padding: 0 1em;
 }
 
 .col-parent-1 {
-
+  padding-left: 0px;
+}
+.col-parent-2 {
+  padding-right: 0px;
 }
 
 .col-child {
