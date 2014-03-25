@@ -1022,4 +1022,5 @@ h2, h3 {
 /* line 13, ../scss/components/column2.scss */
 .spicy-choice {
   margin-bottom: 1em;
+  display: none;
 }
