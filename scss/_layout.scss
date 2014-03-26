@@ -3,47 +3,66 @@
 }
 
 body {
-  max-width: 297mm;
-  max-height: 210mm;
-  margin: auto;
+	 padding: 0 1em;
+	@include breakpoint($print-breakpoint max-width) {
+	  max-width: 297mm;
+	  max-height: 210mm;
+	  margin: auto;
+	}
 }
 
 .col-parent {
-  width: 50%;
-  height: 100%;
-  float: left;
-  padding: 0 1em;
+	@include breakpoint($print-breakpoint max-width) {
+	  width: 50%;
+	  height: 100%;
+	  float: left;
+	  padding: 0 1em;
+	}
 }
 
 .col-parent-1 {
-  padding-left: 0px;
+	@include breakpoint($print-breakpoint max-width) {
+  	padding-left: 0px;
+	}
 }
 .col-parent-2 {
-  padding-right: 0px;
+	@include breakpoint($print-breakpoint max-width) {
+  	padding-right: 0px;
+	}
 }
 
 .col-child {
-  float: left;
-  width: 100%;
+	@include breakpoint($print-breakpoint max-width) {
+  	float: left;
+	  width: 100%;
+	}
 }
 .col-child-left {
-  width: 50%;
-  padding-right: 1em;
+	@include breakpoint($print-breakpoint max-width) {
+ 	 	width: 50%;
+	  padding-right: 1em;
+	}
 }
 .col-child-right {
-  width: 50%;
-  padding-left: 1em;
+	@include breakpoint($print-breakpoint max-width) {
+  	width: 50%;
+	  padding-left: 1em;
+	}
 }
 
 .centered-column {
-  padding: 0;
-  .order-title { text-align: center; }
-  ul {
-    width: 75%;
-    margin: auto;
-  }
+	@include breakpoint($print-breakpoint max-width) {
+  	padding: 0;
+	  .order-title { text-align: center; }
+	  ul {
+	    width: 75%;
+	    margin: auto;
+	  }
+	}
 }
 
 .centered-column-2 {
-  padding-left: 2em;
+	@include breakpoint($print-breakpoint max-width) {
+ 	 padding-left: 2em;
+	}
 }

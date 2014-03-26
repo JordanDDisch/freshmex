@@ -6,5 +6,7 @@
 }
 
 .col-parent-2 .col-child {
-  margin-bottom: .25em;
+	@include breakpoint($print-breakpoint max-width) {
+  	margin-bottom: .10em;
+  }
 }

@@ -856,64 +856,86 @@ textarea {
 
 /* line 5, ../scss/_layout.scss */
 body {
-  max-width: 297mm;
-  max-height: 210mm;
-  margin: auto;
-}
-
-/* line 11, ../scss/_layout.scss */
-.col-parent {
-  width: 50%;
-  height: 100%;
-  float: left;
   padding: 0 1em;
 }
-
-/* line 18, ../scss/_layout.scss */
-.col-parent-1 {
-  padding-left: 0px;
+@media (max-width: 1280px) {
+  /* line 5, ../scss/_layout.scss */
+  body {
+    max-width: 297mm;
+    max-height: 210mm;
+    margin: auto;
+  }
 }
 
-/* line 21, ../scss/_layout.scss */
-.col-parent-2 {
-  padding-right: 0px;
+@media (max-width: 1280px) {
+  /* line 14, ../scss/_layout.scss */
+  .col-parent {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0 1em;
+  }
 }
 
-/* line 25, ../scss/_layout.scss */
-.col-child {
-  float: left;
-  width: 100%;
+@media (max-width: 1280px) {
+  /* line 23, ../scss/_layout.scss */
+  .col-parent-1 {
+    padding-left: 0px;
+  }
 }
 
-/* line 29, ../scss/_layout.scss */
-.col-child-left {
-  width: 50%;
-  padding-right: 1em;
+@media (max-width: 1280px) {
+  /* line 28, ../scss/_layout.scss */
+  .col-parent-2 {
+    padding-right: 0px;
+  }
 }
 
-/* line 33, ../scss/_layout.scss */
-.col-child-right {
-  width: 50%;
-  padding-left: 1em;
+@media (max-width: 1280px) {
+  /* line 34, ../scss/_layout.scss */
+  .col-child {
+    float: left;
+    width: 100%;
+  }
 }
 
-/* line 38, ../scss/_layout.scss */
-.centered-column {
-  padding: 0;
-}
-/* line 40, ../scss/_layout.scss */
-.centered-column .order-title {
-  text-align: center;
-}
-/* line 41, ../scss/_layout.scss */
-.centered-column ul {
-  width: 75%;
-  margin: auto;
+@media (max-width: 1280px) {
+  /* line 40, ../scss/_layout.scss */
+  .col-child-left {
+    width: 50%;
+    padding-right: 1em;
+  }
 }
 
-/* line 47, ../scss/_layout.scss */
-.centered-column-2 {
-  padding-left: 2em;
+@media (max-width: 1280px) {
+  /* line 46, ../scss/_layout.scss */
+  .col-child-right {
+    width: 50%;
+    padding-left: 1em;
+  }
+}
+
+@media (max-width: 1280px) {
+  /* line 53, ../scss/_layout.scss */
+  .centered-column {
+    padding: 0;
+  }
+  /* line 56, ../scss/_layout.scss */
+  .centered-column .order-title {
+    text-align: center;
+  }
+  /* line 57, ../scss/_layout.scss */
+  .centered-column ul {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  /* line 64, ../scss/_layout.scss */
+  .centered-column-2 {
+    padding-left: 2em;
+  }
 }
 
 /* line 1, ../scss/components/_base.scss */
@@ -931,9 +953,11 @@ body {
   margin-bottom: 0;
 }
 
-/* line 8, ../scss/components/_mains.scss */
-.col-parent-2 .col-child {
-  margin-bottom: .25em;
+@media (max-width: 1280px) {
+  /* line 8, ../scss/components/_mains.scss */
+  .col-parent-2 .col-child {
+    margin-bottom: .10em;
+  }
 }
 
 /* line 1, ../scss/components/_typography.scss */
@@ -971,11 +995,23 @@ ul li {
 }
 /* line 26, ../scss/components/_typography.scss */
 ul li {
-  margin-bottom: 1em;
+  margin: 0 0 1em 1em;
+  text-indent: -1em;
   position: relative;
+  list-style-position: inside;
 }
 
-/* line 32, ../scss/components/_typography.scss */
+/* line 34, ../scss/components/_typography.scss */
+.magic-asterisk > li:before {
+  content: "*  ";
+}
+
+/* line 38, ../scss/components/_typography.scss */
+.order-title {
+  list-style-type: none;
+}
+
+/* line 42, ../scss/components/_typography.scss */
 h2, h3 {
   font-family: 'Rancho', cursive;
   text-transform: uppercase;
@@ -984,12 +1020,12 @@ h2, h3 {
   color: black;
 }
 
-/* line 40, ../scss/components/_typography.scss */
+/* line 50, ../scss/components/_typography.scss */
 .price {
   float: right;
 }
 
-/* line 44, ../scss/components/_typography.scss */
+/* line 54, ../scss/components/_typography.scss */
 .absolute-price {
   position: absolute;
   right: 0;
@@ -997,7 +1033,7 @@ h2, h3 {
   font-size: 1em;
 }
 
-/* line 51, ../scss/components/_typography.scss */
+/* line 61, ../scss/components/_typography.scss */
 .supplemental {
   font-style: italic;
   padding: .25em;
@@ -1022,5 +1058,4 @@ h2, h3 {
 /* line 13, ../scss/components/column2.scss */
 .spicy-choice {
   margin-bottom: 1em;
-  display: none;
 }

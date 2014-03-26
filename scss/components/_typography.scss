@@ -24,9 +24,19 @@ ul {
   margin: 0;
   padding: 0;
   li {
-    margin-bottom: 1em;
+    margin: 0 0 1em 1em;
+		text-indent: -1em;
     position: relative;
+		list-style-position:inside;
   }
+}
+
+.magic-asterisk > li:before {
+	content:"*  ";
+}
+
+.order-title {
+	list-style-type: none;
 }
 
 h2, h3 {
